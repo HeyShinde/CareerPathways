@@ -1,0 +1,90 @@
+/* styles/Career.module.css */
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem; /* Increased for better emphasis */
+  margin-bottom: 20px;
+  color: var(--text-color);
+  text-align: center; /* Center the title */
+}
+
+.thumbnail {
+  width: 75%; /* Set width to 75% */
+  /* max-width: 600px; Optional: set a max-width for large images */
+  height: auto;
+  border-radius: 8px;
+  margin: 20px auto; /* Center the image horizontally */
+  display: block; /* Ensure it's treated as a block element for centering */
+}
+
+.description {
+  font-size: 1.125rem; /* Slightly larger font size */
+  line-height: 1.8; /* Increased line-height for readability */
+  color: var(--text-color);
+  max-width: 800px; /* Limit width for readability */
+  margin: 0 auto; /* Center the text block */
+}
+
+.description h1,
+.description h2,
+.description h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--link-color); /* Underline headings */
+  padding-bottom: 10px; /* Space below headings */
+}
+
+.description p {
+  margin: 15px 0;
+  color: var(--text-color);
+  text-align: justify; /* Justify text for better alignment */
+}
+
+.description a {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--link-color); /* Underline links */
+  transition: color 0.3s, border-color 0.3s; /* Smooth color transitions */
+}
+
+.description a:hover {
+  color: var(--link-hover-color);
+  border-bottom: 1px solid var(--link-hover-color); /* Change underline color on hover */
+}
+
+.description img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0; /* Space around images */
+}
+
+.description blockquote {
+  border-left: 4px solid var(--link-color);
+  padding-left: 20px;
+  margin: 20px 0;
+  font-style: italic;
+  color: var(--text-color);
+  background-color: #f9f9f9; /* Light background for blockquotes */
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .description {
+    font-size: 1rem; /* Adjust font size on smaller screens */
+  }
+
+  .description h1,
+  .description h2,
+  .description h3 {
+    font-size: 1.5rem; /* Smaller headings on smaller screens */
+  }
+}
